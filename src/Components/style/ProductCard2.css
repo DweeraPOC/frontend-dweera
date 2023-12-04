@@ -1,0 +1,18 @@
+.declineButton2 {
+    font-size: 30px;
+    display: inline;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: crimson;
+    border: 1px dotted rgba(220, 20, 60, 0.6);
+    cursor: pointer;
+  }
+.approvedButton2 {
+    font-size: 30px;
+    display: inline;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgb(92, 195, 19);
+    border: 1px dotted rgba(92, 195, 19);
+    cursor: pointer;
+  }

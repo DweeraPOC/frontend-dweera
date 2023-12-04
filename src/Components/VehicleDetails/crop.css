@@ -1,0 +1,11 @@
+.fileInput {
+    font-family: calibri;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px dashed #65A30D;
+    text-align: center;
+    background-color: #65A30D;
+    cursor: pointer;
+  }

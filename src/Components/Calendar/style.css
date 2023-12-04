@@ -1,0 +1,84 @@
+.rs-picker-menu {
+    top: 250px !important;
+}
+/*
+.rs-calendar-table-cell-selected {
+    /*background-color: blueviolet !important;
+}*/
+/*.rs-picker-daterange-calendar-group{
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important ;
+}*/
+
+.rs-picker-has-value .rs-btn .rs-picker-toggle-value, .rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value{
+    color: #65D01E !important;
+}
+.rs-calendar-table-cell-selected .rs-calendar-table-cell-content {
+    background-color: #65D01E !important;
+    color: white !important;
+}
+
+.rs-calendar-table-cell-selected .rs-calendar-table-cell-content:hover {
+    background-color: #5cbf1a !important;
+    color: white !important;
+}
+.rs-calendar-table-cell-content:hover {
+    color: rgb(23, 23, 23) !important;
+}
+.rs-calendar-table-cell-is-today .rs-calendar-table-cell-content {
+    box-shadow: inset 0 0 0 1px #65D01E !important;
+}
+.rs-btn-link{
+    background-color: #65D01E !important;
+    color: white !important;
+}
+.rs-btn-link.rs-btn-disabled, .rs-btn-link:disabled{
+    color: white !important;
+}
+
+.rs-btn-primary{
+    background-color: #65D01E !important;
+}
+
+.rs-btn-primary.rs-btn-disabled, .rs-btn-primary:disabled{
+    background-color: #65D01E !important;
+}
+.rs-calendar-table-cell-is-today:hover {
+    background-color: #65D01E30 !important;
+}
+
+.rs-calendar-month-view .rs-calendar-header-title-date{
+    color: #65D01E !important;
+}
+
+.rs-calendar-month-dropdown-year-active{
+    color: #65D01E !important;
+}
+
+.rs-calendar-month-dropdown-cell-active .rs-calendar-month-dropdown-cell-content{
+    background-color: #65D01E !important;
+}
+.rs-picker-default:not(.rs-picker-disabled) .rs-btn-active, .rs-picker-default:not(.rs-picker-disabled) .rs-btn:focus, .rs-picker-default:not(.rs-picker-disabled) .rs-btn:hover, .rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle-active, .rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle:focus, .rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle:hover{
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    -webkit-transition: all 0.30s ease-in-out !important;
+    -moz-transition: all 0.30s ease-in-out !important;
+    -ms-transition: all 0.30s ease-in-out !important;
+    -o-transition: all 0.30s ease-in-out !important;
+    box-shadow: 0 0 4px #65D01E !important;
+    border: 1px solid #65D01E !important;
+}
+
+/*
+* hours picker
+*/
+.rs-calendar-time-dropdown-cell.rs-calendar-time-dropdown-cell-active{
+    background-color: #65D01E !important;
+    color: white !important;
+}
+
+.rs-calendar-time-view .rs-calendar-header-title-time{
+    color: #65D01E !important;
+}

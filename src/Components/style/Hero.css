@@ -1,0 +1,27 @@
+
+    .Hero {
+        background-image: url('../../assets/images/park.jpg');
+        background-size: cover;
+        background-position: 5%;
+        width: 100%;
+        height: 65vh;
+        justify-content: left;
+        align-items: left;
+        display: flex;
+      }
+      
+      .FogSection{
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.874) ;
+        position: relative;
+        top:15%;
+        width: 40%;
+        height: 45vh;
+        justify-content: center;
+        align-items: right;
+        display: flex;
+      }
+    
+      
+      
+      

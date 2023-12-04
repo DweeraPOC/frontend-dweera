@@ -1,0 +1,93 @@
+{
+
+    "--SOONPAGE--": "This following content is for soon page => ",
+
+    "Welcome":"Welcome to Dweera",
+    "line1": "The platform that brings a new win-win solution to mobility problems in modern cities for its community members.",
+    "line2": "Share safely your vehicle and get paid!",
+    "line3": "Get an easy ride, anywhere, anytime with one click!",
+    "line4": "Enjoy a healthy lifestyle and a green world!",
+    "line5": "Join our waitlist now and get your invitation once we're online? That happens here !",
+    "emailmsg": "Enter your email",
+    "error": "Please enter a valid email",
+    "thanks": "Thank for your interest",
+    "submit": "Submit",
+
+    "--NAVBAR--": "This following content is for NAVBAR => ",
+    "Waiting": "Pending",
+    "Home": "Home",
+    "AddOffer": "Add Offer",
+    "MyOffers": "My Offers",
+    "MyBookings": "My Bookings",
+    "BookingRequests": "Booking Requests",
+    "Login": "Login",
+    "SignUp": "Sign Up",
+    "Profile": "Profile",
+    "ChangePassword": "Change Password",
+    "logout": "logout",
+    "Filter": "Filter",
+    "search": "Search",
+
+    "FILTRE MODAL": "",
+
+    "Filters": "Filters",
+    "Pricerange": "Price range",
+    "Pricetype": "Price type",
+    "Typeofvehicles": "Type of vehicles",
+    "Daterange": "Date Range",
+    "Bicycle": "Bicycle",
+    "Scooter": "Scooter",
+    "BicycleElectric": "Bicycle Electric",
+    "ScooterElectric": "Scooter Electric",
+    "both": "Both",
+    "perhour": "Per hour",
+    "perday": "Per day",
+    "FROM": "FROM",
+    "TO": "TO",
+    "ClearAll": "Clear All",
+    "Noexactmatches": "No exact matches",
+    "Show": "Show",
+    "Offer": "Offer",
+
+    "--ADD OFFER": "",
+
+    "Vehiculedetails": "Vehicle details",
+    "Locationdetails": "Location details",
+    "Addpictures": "Add pictures",
+    "Offerdetails": "Offer details",
+    "PriceandDiscounts": "Price and Discounts",
+    "Availabilitydetails": "Availability details",
+    "MakeSure": "Make sure to only add bicycles with functioning breaks and pumped wheels.",
+    "PicturesMsg": "You can include a minimum of 1 and a maximum of 4 pictures in your offer.",
+    
+    "-- Login Page": "",
+    "EnterDetails": "Please enter your details.",
+    "IncorrectEmail": "This user email not found",
+    "IncorrectPassword": "Incorrect user password",
+
+    "--SIGN UP PAGE": "",
+    "itFree": "let's get started with Dweera it's free",
+    "BySignup": "By signing up, you are creating a Dweera account, and you agree to Dweera’s ",
+
+    "--Contact Us Page": "",
+    "ContactMsg": "Get in touch with our team for any questions, feedback or to learn more about our products and services. We are here to help!",
+    "followus": "Don't miss out on our latest updates and exclusive content - follow us on social media today! Join our community on Twitter, Facebook, and Instagram for helpful resources and exciting announcements. Engage with us and share your feedback - we love hearing from our followers. So, connect with us today and stay informed!",
+    
+    "--FORGET PASSWORD": "",
+    "ForgetPasswordMessage": "Please enter your email address to search for your account.",
+    
+    "--Home Page": "",
+    "addYourOffer": "Apologies, it seems you don't have any offers at the moment. To add a new offer, please click on the 'Add Offer' button or navigate to the relevant section of our website. Thank you for your understanding.",
+    "goBookOffer": "We apologize, but it appears that you don't have any bookings for an offer at this time. Please visit our 'Book Offer' section to make a new booking. Thank you for choosing our services.",
+    "BookingRequest": "We regret to inform you that we have not received any booking requests for your offer at this time. If you would like to promote your offer further, please consider sharing it on your social media channels or with your network. Thank you for choosing our platform to promote your services.",
+
+    "OffersNotAvailable": "We're sorry to inform you that the offer you were looking for is currently unavailable. Our team is working hard to bring you the best deals and promotions, but unfortunately, we are unable to offer the particular deal at this time.",
+    
+    "LANDING SECTION":"",
+    "headerLandingSection": "The community platform that brings a new win-win solution to mobility problems in modern cities.",
+
+    "---checkout--" : "",
+    "Duration" : "Duration",
+    "Location" : "Location",
+    "Custom" : "Custom"
+}
