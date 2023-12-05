@@ -25,7 +25,7 @@ export default function CMI({RefAmount, Total,User,HandelSubmit }) {
 
         <input hidden type="text" name="clientid" value="600004123" />
 
-        <input hidden type="text" name="storeKey" value="PASS1234" />
+        <input hidden type="text" name="storeKey" value="PWD_dweera@2024" />
 
         <input hidden ref={RefAmount} type="text" name="amount" value={Total} />
         <input

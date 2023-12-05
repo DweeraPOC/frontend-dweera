@@ -1683,7 +1683,7 @@ function NewCheckOut() {
         />
         <input hidden type="text" name="oid" value={oid} />
         <input hidden type="text" name="clientid" value="600004123" />
-        <input hidden type="text" name="storeKey" value="PASS1234" />
+        <input hidden type="text" name="storeKey" value="PWD_dweera@2024" />
         <input hidden type="text" name="amount" value={totalPrice} />
         <input
           hidden
