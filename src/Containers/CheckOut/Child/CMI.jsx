@@ -1,18 +1,29 @@
 import React from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 export default function CMI({RefAmount, Total,User,HandelSubmit }) {
+  const [oid, setOid] = useState('');
+
+  useEffect(() => {
+    // Generate a UUID
+    const uniqueID = uuidv4();
+    console.log(uniqueID)
+    setOid(uniqueID);
+  }, []); 
+
   return (
     <React.Fragment>
+
       <form
         name="formpaiement"
         id="formpaiement"
-        action="https://testpayment.cmi.co.ma/fim/est3Dgate"
+        action="https://payment.cmi.co.ma/fim/est3Dgate"
         method="post"
       >
 
-        <input hidden type="text" name="oid" value={new Date().getTime()} />
+        <input hidden type="text" name="oid" value={oid} />
 
-        <input hidden type="text" name="clientid" value="600003770" />
+        <input hidden type="text" name="clientid" value="600004123" />
 
         <input hidden type="text" name="storeKey" value="PASS1234" />
 

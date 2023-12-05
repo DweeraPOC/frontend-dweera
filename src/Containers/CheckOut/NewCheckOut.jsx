@@ -14,6 +14,7 @@ import { useCallback } from "react";
 import SelectLocation from "./Child/SelectLocation";
 import { Helmet } from "react-helmet";
 import { SHA512, pack } from "./Child/Functions";
+import { v4 as uuidv4 } from 'uuid';
 
 function NewCheckOut() {
   const systemDate = new Date();
@@ -57,6 +58,14 @@ function NewCheckOut() {
   const [week, setWeek] = useState(1);
   const [month, setMonth] = useState(1);
   const [token, setToken] = useState(null);
+  const [oid, setOid] = useState('');
+
+  useEffect(() => {
+    // Generate a UUID
+    const uniqueID = uuidv4();
+    console.log(uniqueID)
+    setOid(uniqueID);
+  }, []); // The empty dependency array ensures that this effect runs only once when the component mounts
 
   const handleRadioChange = (value) => {
     setSelectedValue(value);
@@ -1658,10 +1667,11 @@ function NewCheckOut() {
           content="Découvrez notre nouvelle - plateforme - dweera - pour - la location de vélos - 🚲 et - location de trottinettes électriques - ⚡. Laissez-vous séduire par une - expérience de mobilité urbaine - unique et - écologique - green vehicle sharing"
         />
       </Helmet>
+
       <form
         name="formpaiement"
         id="formpaiement"
-        action="https://testpayment.cmi.co.ma/fim/est3Dgate"
+        action="https://payment.cmi.co.ma/fim/est3Dgate"
         method="post"
       >
         <input
@@ -1671,8 +1681,8 @@ function NewCheckOut() {
           value="valider"
           onClick={HandlePayment}
         />
-        <input hidden type="text" name="oid" value={new Date().getTime()} />
-        <input hidden type="text" name="clientid" value="600003770" />
+        <input hidden type="text" name="oid" value={oid} />
+        <input hidden type="text" name="clientid" value="600004123" />
         <input hidden type="text" name="storeKey" value="PASS1234" />
         <input hidden type="text" name="amount" value={totalPrice} />
         <input

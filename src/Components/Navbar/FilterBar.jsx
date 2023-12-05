@@ -46,7 +46,7 @@ const FilterBar = () => {
     setLoading(true)
     await axios({
       method : "GET",
-       url : `https://api.dweera.ma/offers/searchv2?page=${filters.page}&city=${filters.city}&rating=${filters.rating}&vehicleType=${filters.vehicleType}&minPrice=${filters.priceRange[0]}&maxPrice=${filters.priceRange[1]}&startDate=${filters.startDate}&endDate=${filters.endDate}&bookingType=${filters.bookingType}&query=${filters.searchText}`,
+       url : `${process.env.REACT_APP_MAIN_URL}/offers/searchv2?page=${filters.page}&city=${filters.city}&rating=${filters.rating}&vehicleType=${filters.vehicleType}&minPrice=${filters.priceRange[0]}&maxPrice=${filters.priceRange[1]}&startDate=${filters.startDate}&endDate=${filters.endDate}&bookingType=${filters.bookingType}&query=${filters.searchText}`,
     })
     .then((response) => {
       if(response.status===200)
