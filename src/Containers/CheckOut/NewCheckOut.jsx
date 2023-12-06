@@ -1653,6 +1653,33 @@ function NewCheckOut() {
     Per_month: "Month",
   };
 
+  const keyTypes = {
+    "perHour" : {
+      name : "Hour",
+      value : "Per_hour"
+    },
+    "perHalfDay" : {
+      name : "Half Day",
+      value : "Per_half_day"
+    },
+    "perDay" : {
+      name : "Day",
+      value : "Per_day"
+    },
+    "perWeek" : {
+      name : "Week",
+      value : "Per_week"
+    },
+    "perMonth" : {
+      name : "Month",
+      value : "Per_month"
+    }
+  }
+  const extractKeys = (arr) => arr?.reduce((keys, obj) => {
+    const objKeys = Object.keys(obj);
+    return keys.concat(objKeys);
+  }, [])
+
   return (
     <div className="flex flex-wrap px-4 py-2 h-auto w-full justify-center gap-6 mt-6">
       <Helmet>
@@ -1811,11 +1838,11 @@ function NewCheckOut() {
             >
               {t("Select a booking type")}
             </option>
-            <option value="Per_hour">{t("Hour")}</option>
-            <option value="Per_day">{t("Day")}</option>
-            <option value="Per_half_day">{t("Half Day")}</option>
-            <option value="Per_week">{t("Week")}</option>
-            <option value="Per_month">{t("Month")}</option>
+            {
+              extractKeys(offerData?.offer?.available_day_hours["availablity"])?.map((v,i) => 
+                <option key={i} value={keyTypes[v]?.value}>{t(keyTypes[v]?.name)}</option>
+              )
+            }
           </select>
           <ErrorDisplayer error={rent?.rentTypeError} />
         </div>
