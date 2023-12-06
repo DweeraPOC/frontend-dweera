@@ -80,7 +80,6 @@ function NewCheckOut() {
         message: null,
         success: true,
       };
-      
       const days =
         rent?.rentType === "Per_day"
           ? offerData?.offer?.available_day_hours["days"]
