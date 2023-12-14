@@ -99,7 +99,8 @@ export default function Products(props) {
     props.DisabledId();
   }, [props.DisabledId]);
 
-  const CleanOffers = ApplyFilters()?.map((o) => {
+  const offersPayload = useSelector((state) => state.OffersReducer.offers);
+  const CleanOffers = props?.filteredData?.map((o) => {
     return o?.vehicles?.location?.map((p) => {
       return {
         ...o,
@@ -117,7 +118,20 @@ export default function Products(props) {
         <div className="w-full">
           <div className="w-full h-full flex justify-center items-center">
               <div style={{ width: '85%' }}>
-                <FilterBar />
+                {
+                  props?.filteredData?.length > 0
+                  ? <FilterBar 
+                    filteredData={props.filteredData} 
+                    handleLoadMore={props.handleLoadMore}
+                    hasNext={props.hasNext}
+                    loading={props.loading}
+                  />
+                  : <EmptyState
+                    msg={"OffersNotAvailable"}
+                    path={"/add-new-offer"}
+                    goTo={"AddOffer"}
+                  />
+                }
               </div>
             </div>
           {/* {ApplyFilters()?.length > 0 ? (
@@ -138,7 +152,7 @@ export default function Products(props) {
           )} */}
         </div>
       ) : (
-        <MapOffers offers={CleanOffers} />
+        <MapOffers offers={CleanOffers || []} />
       )}
     </>
   );
